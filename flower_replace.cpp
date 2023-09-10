@@ -15,6 +15,8 @@
 // Input: flowerbed = [1,0,0,0,1], n = 2
 // Output: False
 
+//content from www.igotanoffer.com
+
 #include<iostream>
 using namespace std;
 
