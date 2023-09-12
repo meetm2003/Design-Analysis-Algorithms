@@ -15,7 +15,8 @@
 // Input: flowerbed = [1,0,0,0,1], n = 2
 // Output: False
 
-//content is from "www.igotanoffer.com"
+//time complexity :: O(n)
+//space complexity :: O(1)
 
 #include<iostream>
 using namespace std;
@@ -25,7 +26,7 @@ class solution{
         bool canplaceFlower(int a[],int size, int n){ 
             if(size == 0 || n > size / 2 + 1) return false;
             int count = 0;
-            for(int i = 0; size && count < n; i++){
+            for(int i = 0; i < size && count < n; i++){
                 if(a[i] == 0){
                     int prev = i == 0 ? 0 : a[i - 1];
                     int next = i == size ? 0 : a[i + 1];
@@ -42,5 +43,11 @@ int main(){
     solution s;
     int a[100] = {0};
     int size = sizeof(a) / sizeof(a[0]);
-    cout<< s.canplaceFlower(a,size,51)<<endl;
+    bool m = s.canplaceFlower(a,size,50);
+    if(m == true){
+        cout<<"we can place the flowers..."<<endl;
+    }
+    else{
+        cout<<"we can not place the flowers..."<<endl;
+    }
 }
