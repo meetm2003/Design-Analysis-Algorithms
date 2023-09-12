@@ -8,10 +8,7 @@
 // Then 4 is the first bad version. 
 
 //time complexity :: O(log n)
-//space complexity :: O(1)
-
-#include<iostream>
-using namespace std;
+//space complexity :: O(1)
 
 #include<iostream>
 using namespace std;
