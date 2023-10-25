@@ -58,3 +58,5 @@ int main() {
     cout << n << endl;
     return 0;
 }
+// time complexity :: O(mn)
+// space complexity :: O(mn)
